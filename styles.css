@@ -1,7 +1,7 @@
 *{
     text-decoration: none;
     list-style: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
     max-width: 90vw;
@@ -9,11 +9,13 @@ body{
     width: 100vw;
     margin: 0;
     padding: 0;
+    background-color: rgb(245, 245, 245);
 }
 main{
     width: 80%;
 }
 .container{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +24,7 @@ main{
     width: 100%;
     max-width: 100%;
     min-width: 50%;
-    height: 90vh;
+    height: 88vh;
 
     background-image: url(./img/banner.png);
     background-size: contain;
@@ -31,12 +33,18 @@ main{
 
     display: flex;
     flex-direction: column;
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(155, 154, 197, 0.1);
 }
 nav {
     height: 6em;
-    background-color: white;
+    
     min-height: 6em;
     min-width: 50%;
+
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(155, 154, 197, 0.2);
 }
 .nav-bar {
     width: 80%;
@@ -74,23 +82,19 @@ nav {
 
     position: relative;
     top: 30px;
-    left: 70px;
+    left: 60px;
 }
 .presentacion {
     position: relative;
     left: 8em;
     top: 5em;
 }
-.header-text{
-    font-size: 12.5px;
-    letter-spacing: 1px;
-}
-
 .services{
     width: 100%;
     position: relative;
     display: grid;
     gap: 1em;
+
 
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
@@ -100,27 +104,48 @@ nav {
     grid-column: 1/4;
 }
 .content-box {
-    height: 7em;
+    height: 8em;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    color: rgb(12, 12, 71);
+    padding-left: 2em;
+
+    background-color: white;
 }
 .about{
     height: 20em;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    
+    margin-top: 3em;
+    margin-bottom: 4em;
 }
 .header-about{
     display: grid;
     grid-template-rows: 30% 50% 20%;
 }
 .about-img {
-    width: 25em;
-    height: 20em;
+    width: 30em;
+    height: 18em;
+    position: relative;
+    left: 8em;
+    border-radius: 10px;
 }
 .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1em 0 2em;
+
+    text-align: center;
+
+    background-color: rgb(11, 11, 48);
+    border-radius: 15px;
+
+
+    color: white;
+    margin-bottom: 5em;
 }
 .nav-button--contact{
     border-radius: 6px;
@@ -141,22 +166,65 @@ nav {
     display: flex;
     flex-direction: row-reverse;
 
-    margin-top: 1em;
+    margin-top: 6em;
 }
 .content-img{
+    width: 80%;
+
     display: grid;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: repeat(2, auto);
-    gap: 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, 50%);
+    gap: 15px;
 }
 .header-marcas{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    padding-right: 4em;
+    padding-left: 3em;
 }
 .marcas-img {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+.header-title {
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    color: rgb(18, 18, 92);
+}
+.header-text{
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: rgb(18, 18, 88);
+}
+span{
+    color: red;
+}
+.divi{
+    font-size: 1em;
+    color: gray;
+}
+.pricing{
+    background-color: aqua;
+    justify-content: center;
+    margin: auto 0;
+    display: grid;
+    gap: 10px;
+
+    grid-template-columns: repeat(3, 22%);
+    grid-template-rows: 12em 15em;
+
+    margin-top: 4em;
+}
+.header-pricing{
+    grid-column: 1/4;
+    text-align: center;
+    
+}
+.pricing-box{
+ border-radius: 10px;
+ box-shadow: 2px 2px 2px 1px rgba(155, 154, 197, 0.1);
+
 }
